@@ -1,0 +1,313 @@
+*{
+    box-sizing: border-box;
+}
+
+/* efecto scroll */
+html{
+    scroll-behavior: smooth; 
+}
+
+/* TODO ESTILOS PARA APP MOBILE */
+body{
+    margin: 0%;
+}
+
+h1{ font-size: 3.3em; }
+h2{ font-size: 2.4em; }
+h3{ font-size: 2em; }
+p{ font-size: 1.25em; }
+ul{ list-style: none;}
+a{ color:rgb(0, 0, 0); font-size: 1.10em; }
+li{ font-size: 1.25em; }
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 5px 12px;
+    border-radius: 10px;
+    border: 1px solid rgb(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.5);;
+    color: white;
+    background-color: rgb(108, 12, 152);
+}
+
+button:hover{
+    background-color: rgb(227, 165, 255);
+}
+
+.container{
+    max-width:1400px;
+    margin: auto;
+}
+
+.color-acento {color: blueviolet;}
+
+header {
+    background-color:rgb(236, 252, 247);
+}
+
+header .logo {
+    margin: 5px;
+    padding: 10px 30px;
+    font-weight: bold;
+    color:rgb(154, 4, 192);
+    font-size: 2em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 35px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    color:rgb(0, 0, 0);
+}
+
+header a:hover{
+    color:rgb(163, 60, 204);
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),url("media/no5.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: white;
+}
+
+#somos-pro .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#mis-proyectos{
+    background-color:teal;
+    color: white;
+    text-align: center;
+}
+
+#mis-proyectos .container{
+    padding: 100px 0px;
+}
+
+#mis-proyectos h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#mis-proyectos p{
+    display: none;
+}
+
+#mis-proyectos li{
+    margin-right: 100px;
+}
+
+#mis-proyectos .tarjeta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.tarjeta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),url("media/no1.jpg");
+    
+}
+
+.tarjeta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),url("media/no2.jpg");
+   
+}
+
+.tarjeta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),url("media/no4.jpg");
+   
+}
+
+#adicionales .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#adicionales li{
+    margin: 12px 0px;
+    font-weight: bold;
+}
+
+#adicionales h1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#final {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color:rgb(31, 29, 29);
+    color: snow;
+    height: 50vh;
+}
+
+#final h1{
+    font-size: 4vw;
+}
+
+footer{
+    margin: 0;
+    padding: 15px;
+    background-color: rgb(184, 184, 184);
+}
+
+footer p{
+    margin: 0;
+}
+
+footer .container{
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+
+
+
+/* TODO ESTILOS PARA APP DESKTOP */
+@media (min-width: 600px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 25px;
+    }
+
+    #hero h1{
+        font-size: 5em;
+    }
+
+    #somos-pro .container{
+        display: flex;
+        justify-content: center;
+    }
+
+    #somos-pro .texto{
+        width: 50%;  
+        max-width: 600px;
+        text-align: initial;
+        padding: 0px 30px;
+        padding-left: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    #somos-pro h2{
+        margin-top: 0px;
+    }
+
+    #somos-pro .img-container{
+        background-image: url("media/prog.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 40%;
+    }
+
+    #mis-proyectos .proyectos{
+        display: flex;
+        justify-content: center;
+    }
+
+    #mis-proyectos h3{
+        margin-top: 0;
+    }
+
+    #mis-proyectos .tarjeta{
+        padding: 50px;
+    }
+
+    #mis-proyectos li{
+        margin-right: 100px;
+    }
+
+    #adicionales{
+        background-image: url();
+    }  
+    #adicionales .container{
+        text-align: initial;
+        padding: 50px;
+    }
+
+    #adicionales h1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #adicionales ul{
+        margin-left: 100px;
+        
+    }    
+
+    
+
+
+}
