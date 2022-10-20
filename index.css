@@ -43,14 +43,14 @@ button:hover{
 .color-acento {color: blueviolet;}
 
 header {
-    background-color:rgb(236, 252, 247);
+    background-image: url("media/nav1.jpg");
 }
 
 header .logo {
     margin: 5px;
     padding: 10px 30px;
     font-weight: bold;
-    color:rgb(154, 4, 192);
+    color:rgb(255, 255, 255);
     font-size: 2em;
 }
 
@@ -71,8 +71,8 @@ header a{
     padding: 5px 12px;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.2em;
-    color:rgb(0, 0, 0);
+    font-size: 1.5em;
+    color:rgb(255, 255, 255);
 }
 
 header a:hover{
@@ -91,23 +91,29 @@ header a:hover{
         0deg,
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
-    ),url("media/no5.png");
+    ),url("media/programming.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
 
 #hero h1{
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 #somos-pro .container{
     text-align: center;
     padding: 200px 12px;
+    background-image: url("media/pastel.jpg");
+    background-position: center center;
+    background-size: cover;
+    
 }
 
 #mis-proyectos{
-    background-color:teal;
+    background-image: url("media/pieza.jpg");
+    background-position: center center;
+    background-size: cover;
     color: white;
     text-align: center;
 }
@@ -165,8 +171,11 @@ header a:hover{
 }
 
 #adicionales .container{
-    text-align: center;
-    padding: 200px 12px;
+    background-image: url("media/diseno.jpg");
+    background-position: center;
+    background-size: cover;
+    text-align:justify;
+    padding: 60px 12px;
 }
 
 #adicionales li{
@@ -189,8 +198,11 @@ header a:hover{
     align-items: center;
     text-align: center;
     background-color:rgb(31, 29, 29);
-    color: snow;
+    color: rgb(0, 0, 0);
     height: 50vh;
+    background-image: url("media/mini.jpg");
+    background-position:center;
+    background-size: cover;
 }
 
 #final h1{
@@ -291,7 +303,7 @@ footer .container{
     }  
     #adicionales .container{
         text-align: initial;
-        padding: 50px;
+        padding: 150px;
     }
 
     #adicionales h1{
