@@ -174,7 +174,7 @@ header a:hover{
     background-image: url("media/diseno.jpg");
     background-position: center;
     background-size: cover;
-    text-align:justify;
+    text-align:left;
     padding: 60px 12px;
 }
 
@@ -225,7 +225,6 @@ footer .container{
     justify-content: center;
     align-items: flex-end;
 }
-
 
 
 
