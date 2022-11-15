@@ -27,7 +27,7 @@ button{
     border-radius: 10px;
     border: 1px solid rgb(0, 0, 0, 0.5);
     box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.5);;
-    color: white;
+    color: rgb(255, 255, 255);
     background-color: rgb(108, 12, 152);
 }
 
@@ -43,14 +43,14 @@ button:hover{
 .color-acento {color: blueviolet;}
 
 header {
-    background-image: url("media/nav1.jpg");
+    background-color: mediumturquoise;
 }
 
 header .logo {
     margin: 5px;
     padding: 10px 30px;
     font-weight: bold;
-    color:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
     font-size: 2em;
 }
 
@@ -72,7 +72,7 @@ header a{
     text-decoration: none;
     font-weight: bold;
     font-size: 1.5em;
-    color:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
 }
 
 header a:hover{
@@ -101,13 +101,16 @@ header a:hover{
     color: rgb(255, 255, 255);
 }
 
-#somos-pro .container{
-    text-align: center;
-    padding: 200px 12px;
+#somos-pro{
     background-image: url("media/pastel.jpg");
     background-position: center center;
-    background-size: cover;
+    background-size:cover;
+    text-align: center;
     
+}
+
+#somos-pro .container{
+    padding: 100px 0px;
 }
 
 #mis-proyectos{
@@ -170,12 +173,16 @@ header a:hover{
    
 }
 
-#adicionales .container{
-    background-image: url("media/diseno.jpg");
+#adicionales{
+    background-image: url("media/geometric.jpg");
     background-position: center;
     background-size: cover;
     text-align:left;
-    padding: 60px 12px;
+    padding: 15px 12px;
+}
+
+#adicionales .container{
+    padding: 100px 0px;
 }
 
 #adicionales li{
@@ -198,9 +205,9 @@ header a:hover{
     align-items: center;
     text-align: center;
     background-color:rgb(31, 29, 29);
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     height: 50vh;
-    background-image: url("media/mini.jpg");
+    background-image: url("media/objetos.png");
     background-position:center;
     background-size: cover;
 }
@@ -254,6 +261,7 @@ footer .container{
     #somos-pro .container{
         display: flex;
         justify-content: center;
+    
     }
 
     #somos-pro .texto{
@@ -297,9 +305,6 @@ footer .container{
         margin-right: 100px;
     }
 
-    #adicionales{
-        background-image: url();
-    }  
     #adicionales .container{
         text-align: initial;
         padding: 150px;
@@ -317,8 +322,4 @@ footer .container{
         margin-left: 100px;
         
     }    
-
-    
-
-
 }
